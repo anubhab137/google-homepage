@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
+        <meta chatset="utf-8">
+        <title>Google</title>
+    </head>
+    <body id="ff">
+        <header id="top-left">
+            <a class="space" href="https://www.google.com/intl/en-GB/gmail/about/">Gmail</a>
+            <a class="space" href="https://www.google.co.in/imghp?hl=en&tab=wi&ogbl">Images</a>
+            <button onclick="location.href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/'" type="button" id="sign-in">Sign in</button>
+        </header>
+        <div id=middle>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            <form><br>
+                <input id="search" type="text" autofocus>
+                <input type="submit" class="corner" value="" >
+                <br><br><br>
+                <button class="button" type="submit">Google Search</button>
+                <button class="button" type="submit">I'm Feeling Lucky</button>
+            </form>
+        </div>
+        <footer id="border">
+            <div id="bottom-left">
+                <a class="space" href="https://ads.google.com/intl/en_in/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+                <a class="space" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Buisness</a>
+                <a class="space" href="https://about.google/?utm_source=google-IN&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a>
+                <a class="space" href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
+            </div>
+            <div id="bottom-right">
+                <a class="space" href="https://policies.google.com/privacy?fg=1">Privacy</a>
+                <a class="space" href="https://policies.google.com/terms?fg=1">Terms</a>
+                <a class="space" href="https://www.google.com/preferences?hl=en">Settings</a>
+            </div>    
+        </footer>
+    </body>
+</html>
+
+<style>
+    #top-left{
+        position: absolute;
+        right:5px;
+        top:15px;
+        font-size:0.8em;
+        font-weight:5px;
+    }
+    #sign-in{
+        background-color:rgba(0,110,255,0.8);
+        padding:5px 12px 5px 12px;
+        color:white;
+    }
+    #middle{
+        padding:200px 20px 442px 20px;
+        text-align:center;  
+          
+    }
+    #bottom-left{
+        position:absolute;
+        bottom:15px;
+        left:20px;
+        font-size:0.8em;
+        font-weight:5px;
+    }   
+    .space{
+        padding:10px;
+        color:black;
+        font-weight: 10px;
+    }
+    #bottom-right{
+        position:absolute;
+        bottom:15px;
+        right:2px;
+        font-size:0.8em;
+        font-weight:2px;
+    }
+    #border{
+        border-style: solid;
+        border-color: rgba(128, 128, 128,0.2);
+        border-width: 0.4px;
+         
+        
+    }
+    #search{
+        width:450px;
+        border-radius: 35px;
+        border: 1px rgb(216, 206, 206) solid;
+        height:40px;
+        z-index:1;
+        padding-left: 40px;
+    }
+    .corner{
+        position: absolute;
+        top:334px;
+        left:245px;
+        z-index: 2;
+        background-image: url("https://cdn.pixabay.com/photo/2017/01/13/01/22/magnifying-glass-1976105_960_720.png");
+        height:20px;
+        width:20px;
+        background-size: 18px;
+        background-color:transparent;
+        border-color: transparent;
+        opacity: 0.6;
+    }
+    #ff{
+        font-family: 'Roboto', sans-serif;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+    #search:hover{
+        -webkit-box-shadow: 0 0 3px  gray;
+         box-shadow: 0 0 3px  gray;
+    }
+    .button{
+        padding:3px 1px 3px 1px;
+        opacity: 0.5;
+        margin-left:10px;
+        margin-right: 10px;
+        color:black;
+    }
+    .button:hover{
+        -webkit-box-shadow: 0 0 3px  gray;
+         box-shadow: 0 0 3px  gray;
+         text-shadow: 0.2px 0.2px black ;
+
+    }
+    
+</style>
