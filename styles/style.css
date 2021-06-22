@@ -27,6 +27,7 @@ button:focus {
     
     list-style-type: none;
 }
+
 li {
     display: inline;
     float: right;
@@ -46,7 +47,7 @@ li {
 }
 
   
-  .bento-dot {
+.bento-dot {
     width : 4px;
     height: 4px;
     border-radius: 999px;
@@ -134,34 +135,35 @@ a:hover{
     
   }
   
-  .searchbar:hover,
-  .searchbar:focus-within {
+.searchbar:hover,
+.searchbar:focus-within {
     border-color: white;
     box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-  }
+}
   
-  .search-icon {
+.search-icon {
     width: 25px;
     height: 25px;
     margin-right: 1rem;
-  }
+}
   
-  .search-input {
+.search-input {
     width: 90%;
     font-size: 1.2rem;
     font-weight: lighter;
-  }
+}
+
 .mic{
     background: none;
     
 }
  
-  .microphone-icon {
+.microphone-icon {
     
     width: 25px;
     height: 25px;
     box-shadow: none;
-  }
+}
 
 .search-button-div{
     margin-top: 40px;
@@ -191,7 +193,7 @@ a:hover{
     color: #202124;
 }
 
-  #footer {
+#footer {
     position:absolute;
     bottom:0;
     width:100%;
@@ -202,7 +204,7 @@ a:hover{
     color: rgba(0,0,0,.54);
     background-color:#f2f2f2;
     
- }
+}
   
 #bottom-left{
      float:left;
@@ -240,4 +242,4 @@ a:hover{
     html {
       font-size: 50%;
     }
-  }
+}

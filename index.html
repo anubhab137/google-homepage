@@ -5,10 +5,11 @@
     <head>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet"> 
         <link href="styles/style.css" rel="stylesheet">
-        <script src="scripts/script.js"></script>
+        
         <meta chatset="utf-8">
         <title>Google</title>
         <link rel="shortcut icon" href="images/logo1.webp" type="image/webp">
+        
     </head>
 
     <!--    body    -->
@@ -19,7 +20,7 @@
             <ul class="nav">
 
                 <!--    icon list on top navigation bar    -->
-                <li><button onclick="location.href='https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAmgQ'" type="button" id="sign-in">Sign in</button></li>
+                <li><button type="button" id="sign-in">Sign in</button></li>
                 
                 <li>
                     <a href="#">
@@ -50,14 +51,14 @@
             
                 <div class="searchbar">
                     <img class="search-icon" src="images/google-search.png" alt="" >
-                    <input class="search-input" type="text" >
+                    <input id="gsearch" class="search-input" type="text" >
                     <button class="mic">
                       <img class="microphone-icon" src="images/google-microphone.png" alt=""/>
                     </button>
                   </div>
                 <div class="search-button-div">
-                    <button class="button search-button" type="submit">Google Search</button>
-                    <button class="button search-button" type="submit">I'm Feeling Lucky</button>
+                    <button onclick="search()" class="button search-button" type="submit">Google Search</button>
+                    <button id="lucky" class="button search-button" type="submit">I'm Feeling Lucky</button>
                 </div>    
         </div>
         
@@ -70,12 +71,15 @@
                 <a class="fot" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Buisness</a>
                 <a class="fot" href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
             </div>
-            
+
             <div id="bottom-right">
                 <a class="fot" href="https://policies.google.com/privacy?fg=1">Privacy</a>
                 <a class="fot" href="https://policies.google.com/terms?fg=1">Terms</a>
                 <a class="fot" href="https://www.google.com/preferences?hl=en">Settings</a>
             </div>    
         </footer>
+        <script src="scripts/script.js"></script>
     </body>
 </html>
+
+
