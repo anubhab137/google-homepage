@@ -18,3 +18,12 @@ function search() {
     var text = document.getElementById("gsearch").value;
     location.replace("https://www.google.com/search?q=" + text + "");
 }
+
+var input = document.getElementById("gsearch");
+
+input.addEventListener("keyup", function(event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      search();
+    }
+  }); 
